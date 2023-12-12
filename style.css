@@ -1,0 +1,72 @@
+@charset "UTF-8";
+header {
+  font-weight: bold;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+header h1 {
+  align-items: center;
+}
+
+.fleche, .tête__flèche--vide {
+  width: 18px;
+  height: 20px;
+  left: 1rem;
+  top: 1rem;
+  display: inline-block;
+  transform: translateY(-50%);
+  font-size: 20px;
+  position: absolute;
+}
+
+.localisation {
+  align-items: center;
+  text-align: center;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0; /* Aucun padding à droite */
+  padding-left: 0; /* Aucun padding à gauche */
+  margin-left: 0;
+  border-left: 0;
+}
+.localisation i {
+  font-size: 1.25rem;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1rem 2rem;
+  color: white;
+  margin-top: 5rem;
+}
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+  padding: 1rem 0;
+}
+footer p {
+  padding: 0.2rem;
+}
+
+body .footer {
+  margin: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+footer {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+footer :any-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
