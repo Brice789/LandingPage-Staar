@@ -1,0 +1,43 @@
+/* Styles de base pour le body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Applique la police Google */
+    background: white;
+}
+
+/* Container principal pour les éléments de fonctionnalité */
+.function-grid-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* Style pour chaque catégorie de fonction */
+.function-cat {
+    flex-basis: 30%; /* Prend 30% de l'espace disponible */
+    margin-bottom: 20px; /* Espacement en bas de chaque catégorie */
+    text-align: center; /* Centre le texte */
+}
+
+/* Styles pour les titres et les paragraphes */
+.heading-text-2, .paragraph-4 {
+    font-weight: bold; /* Met le texte en gras */
+    color: #333; /* Couleur du texte */
+}
+
+.paragraph-4 {
+    color: #666; /* Couleur des paragraphes */
+}
+
+/* Media query pour affichage sur mobile */
+@media (max-width: 768px) {
+    .function-cat {
+        flex-basis: 100%; /* Chaque catégorie prend toute la largeur sur mobile */
+    }
+}

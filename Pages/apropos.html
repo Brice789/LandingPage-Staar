@@ -1,157 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Commandez votre expertise automobile agréée partout en France et pour tout type de demande : vice caché, vente de véhicule, malfaçons de garagiste">
-    <title>Votre Expertise Auto partout en France : vice caché, vente, réparation</title>
-    <!-- <link rel="stylesheet" media="all" href="https://cdn.litige.fr/assets/application-8b9d7baf2f8f047ea7a5a79ca32d681c369e4d27ebda034267647bccf4cfdab0.css">
-    <link rel="stylesheet" media="all" href="https://cdn.litige.fr/assets/subscription-64d48a1a5992a5af54dcb9d2fa2c1254ce7e17d427dc558e882238cd3662a585.css"> -->
-    <link rel="canonical" href="https://www.litige.fr/services/expert-auto?gad_source=1&amp;gclid=CjwKCAiAhJWsBhAaEiwAmrNyq_kuf8oqX1DhtOv-m9NjDqBmn_CqVUEFfYHx8dI_SyGT19iUWDZeHhoC66YQAvD_BwE">
+    <style>
+        /* Styles de base pour le body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: 100%; /* Empêche le zoom involontaire sur les appareils mobiles */
+        }
 
+        /* Container principal pour les éléments de fonctionnalité */
+        .function-grid-2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Espacement entre les éléments */
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            box-sizing: border-box;
+        }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+        /* Style pour chaque catégorie de fonction */
+        .function-cat {
+            flex-basis: 30%; /* Prend 30% de l'espace disponible */
+            margin-bottom: 20px; /* Espacement en bas de chaque catégorie */
+            text-align: center; /* Centre le texte */
+        }
+
+        /* Styles pour les titres */
+        .heading-text-2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Styles pour les paragraphes */
+        .paragraph-4 {
+            color: #666;
+        }
+
+        /* Media query pour affichage sur mobile */
+        @media (max-width: 768px) {
+            .function-cat {
+                flex-basis: 100%; /* Chaque catégorie prend toute la largeur sur mobile */
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <title>Fonctionnalités</title>
 </head>
 <body>
-    
-  
-    <main class="landing-wrapper expert-auto-landing-wrapper">
-        <!-- Begin Hero Section -->
-        <section class="hero">
-          <div class="flex hero__container">
-            <div class="left col w-50">
-              <!-- Begin Breadcrumb -->
-              <nav class="breadcrumb">
-                <ol class="breadcrumb__list">
-                  <li class="breadcrumb__group">
-                    <a href="/">Home</a>
-                    <span class="breadcrumb__divider">
-                  <i class="fal fa-chevron-right"></i>
-                </span>
-                  </li>
-                  <li class="breadcrumb__group">
-                    <a href="/services/expert-auto">Services</a>
-                    <span class="breadcrumb__divider">
-                  <i class="fal fa-chevron-right"></i>
-                </span>
-                  </li>
-                  <li class="breadcrumb__group">
-                    <a href="/services/expert-auto">Expert automobile</a>
-                  </li>
-                </ol>
-              </nav>
-              <!-- /End Breadcrumb -->
-              <h1 class="col__title bold">
-                Votre <span class="gradient-blue">EXPERT AUTOMOBILE</span>
-                <span class="col__title-sub bold">agréé partout en France</span>
-              </h1>
-              <div class="col__body">
-                <ul class="col__body-features">
-                  <li class="col__body-features-item">
-                    <span class="basic-blue"><i class="fas fa-check"></i></span>
-                    <span class="bold">Vices cachés</span>, voitures d’occasion ou tout type de véhicule
-                  </li>
-                  <li class="col__body-features-item">
-                  <span class="basic-blue">
-                    <i class="fas fa-check"></i>
-                  </span>
-                    <span class="bold">Annulation d’une vente</span> (particuliers, pros ou garagistes)
-                  </li>
-                  <li class="col__body-features-item">
-                  <span class="basic-blue">
-                    <i class="fas fa-check"></i>
-                  </span>
-                    Réparations mal réalisées, malfaçons du garagiste
-                  </li>
-                  <li class="col__body-features-item">
-                  <span class="basic-blue">
-                    <i class="fas fa-check"></i>
-                  </span>
-                    Examen de véhicules avant mise en vente
-                  </li>
-                  <li class="col__body-features-item">
-                  <span class="basic-blue">
-                    <i class="fas fa-check"></i>
-                  </span>
-                    Vos Experts Agréés partout en France
-                  </li>
-                </ul>
-                <div class="lSSlideOuter "><div class="lSSlideWrapper usingCss on"><ul class="col__body-features lightSlider lSFade" id="light-slider" style="height: 0px; transition-duration: 100ms; transition-timing-function: ease; padding-bottom: 32.7273%;">
-                  <li class="lslide">
-                    <div class="col__body-features-item">
-                      <span class="basic-blue"><i class="fas fa-check"></i></span>
-                      <span class="bold">Vices cachés</span>, voitures d’occasion ou tout type de véhicule
-                    </div>
-                    <div class="col__body-features-item">
-                    <span class="basic-blue">
-                      <i class="fas fa-check"></i>
-                    </span>
-                      <span class="bold">Annulation d’une vente</span> (particuliers, pros ou garagistes)
-                    </div>
-                    <div class="col__body-features-item">
-                    <span class="basic-blue">
-                      <i class="fas fa-check"></i>
-                    </span>
-                      Réparations mal réalisées, malfaçons du garagiste
-                    </div>
-                  </li>
-                  <li class="lslide active">
-                    <div class="col__body-features-item">
-                    <span class="basic-blue">
-                      <i class="fas fa-check"></i>
-                    </span>
-                      Examen de véhicules avant mise en vente
-                    </div>
-                    <div class="col__body-features-item">
-                    <span class="basic-blue">
-                      <i class="fas fa-check"></i>
-                    </span>
-                      Compteurs kilométriques trafiqués
-                    </div>
-                    <div class="col__body-features-item">
-                    <span class="basic-blue">
-                      <i class="fas fa-check"></i>
-                    </span>
-                      Vos Experts Agréés partout en France
-                    </div>
-                  </li>
-                </ul><div class="lSAction"><a class="lSPrev"></a><a class="lSNext"></a></div></div><ul class="lSPager lSpg" style="margin-top: 5px;"><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li></ul></div>
-              </div>
-              <div class="col__footer">
-                <a href="https://www.litige.fr/medias/radio/julien-courbet-rtl">
-                  <div class="col__footer-rtl flex">
-                    <div class="col">
-                      <img style="height: 40px;" class="rtl-logo" src="https://cdn.litige.fr/assets/julien-courbet-d78d6df73eeefffeed36e7eead955a53c9c8e5f0967f2171cbca849a36102371.png">
-                    </div>
-                    <div class="col">
-                  <span>
-                    Retrouvez-nous
-                    <br>
-                    dans Ça peut vous arriver
-                    <br>
-                    avec <span class="bold">Julien Courbet</span>
-                  </span>
-                    </div>
-                  </div>
-    </a>          </div>
-            </div>
-            <div class="right col w-50">
-              <div class="col__body hide-desktop">
-                <a class="col__body-cta bold cta-blue-link gradient-blue-bg hide-desktop" href="/plaignant/new?category_id=111">Je lance ma demande</a>
-              </div>
-              <div class="col__title">
-                <div class="icon text-center"><i class="fad fa-car"></i></div>
-                <span class="bold">
-                Plus de <span class="basic-blue">1200</0span>
-                automobilistes <br> accompagnés chaque année
-              </span>
-              </div>
-              <div class="col__body">
-                <a class="col__body-cta bold cta-blue-link gradient-blue-bg hide-mobile" href="/plaignant/new?category_id=111">Je m'inscrit</a>
+    <div class="function-grid-2">
+        <!-- Début des éléments de fonctionnalité -->
+        <div class="function-cat">
+            <h3 class="heading-text-2"><strong>Tableau de bord</strong></h3>
+            <p class="paragraph-4">Permet un classement des dossiers par date de création avec mise à jour du statut en fonction des actions menées.</p>
+        </div>
+        <div class="function-cat">
+            <h3 class="heading-text-2"><strong>Création de dossier</strong></h3>
+            <p class="paragraph-4">- Création d'un dossier manuellement avec remontées de données via votre logiciel de gestion.<br>- Création automatique en fonction de l'état de votre dossier directement dans votre logiciel de gestion.</p>
+        </div>
+        <div class="function-cat">
+            <h3 class="heading-text-2"><strong>Visioconférence</strong></h3>
+            <p class="paragraph-4">Échanges instantanés visuels et sonores avec vos clients.<br>Solution de visioconférence permettant à l'expert de voir la caméra du client à distance et permettant au client de voir l'expert sur son smartphone.</p>
+        </div>
+        <div class="function-cat">
+            <h3 class="heading-text-2"><strong>Suivi de dossier</strong></h3>
+            <p class="paragraph-4">Retrouvez toutes les informations utiles de votre dossier sur une seule page : Informations générales, contacts, photos et historique des actions.</p>
+        </div>
+        <div class="function-cat">
+            <h3 class="heading-text-2"><strong>Prise de rdv en ligne</strong></h3>
+            <p class="paragraph-4">Module permettant à vos clients de prendre rendez-vous en ligne en fonction des disponibilités de chaque expert.</p>
+        </div>
+        <div class="function-cat">
+            <h3 class="heading-text-2"><strong>Photos du véhicule</strong></h3>
+            <p class="paragraph-4">Possibilité de prendre la main sur l'appareil photo du client et de prendre les photos souhaitées avec sauvegarde automatique dans votre logiciel de gestion.</p>
+        </div>
+        <!-- Fin des éléments de fonctionnalité -->
+    </div>
 </body>
 </html>
