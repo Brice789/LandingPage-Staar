@@ -558,6 +558,15 @@ nav ul li a {
     height: auto; /* Make image height responsive */
   }
 }
+.kit-demarrage-link {
+  color: inherit; /* Hérite la couleur du texte de l'élément parent */
+  text-decoration: none; /* Aucun soulignement pour ressembler à un texte normal */
+}
+
+.kit-demarrage-link:hover {
+  text-decoration: underline; /* Ajoute un soulignement au survol pour indiquer qu'il s'agit d'un lien */
+}
+
 .presentation .imgpresentation {
   width: 300px;
   height: auto;
@@ -784,7 +793,7 @@ body, html {
 
 main h2 {
   font-size: 32px;
-  color: #333;
+  color: #43a4ea;
   text-align: center;
   margin-top: 10rem;
 }
@@ -886,7 +895,7 @@ body {
 /* Styles pour les titres et les paragraphes */
 .heading-text-2, .paragraph-4 {
   font-weight: bold; /* Met le texte en gras */
-  color: #333; /* Couleur du texte */
+  color: #43a4ea; /* Couleur du texte */
 }
 
 .paragraph-4 {

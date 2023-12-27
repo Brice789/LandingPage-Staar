@@ -113,3 +113,12 @@ nav ul li a {
         height: auto; /* Make image height responsive */
     }
 }
+
+.kit-demarrage-link {
+    color: inherit; /* Hérite la couleur du texte de l'élément parent */
+    text-decoration: none; /* Aucun soulignement pour ressembler à un texte normal */
+}
+
+.kit-demarrage-link:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol pour indiquer qu'il s'agit d'un lien */
+}
