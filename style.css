@@ -588,7 +588,7 @@ nav ul li a {
   left: 5%; /* Ajuster selon la marge souhaitée */
   transform: translateY(-50%); /* Centre verticalement le contenu */
   color: #000000; /* Texte blanc pour la visibilité */
-  background-color: rgba(192, 222, 241, 0.5); /* Fond semi-transparent pour la lisibilité du texte */
+  background-color: rgba(164, 200, 224, 0.5); /* Fond semi-transparent pour la lisibilité du texte */
   padding: 2rem;
   max-width: 50%; /* Ajuster selon la largeur souhaitée du texte */
 }
@@ -606,7 +606,7 @@ nav ul li a {
 .content-overlay button {
   font-size: 1rem; /* Taille du bouton */
   padding: 0.5rem 1rem; /* Ajuster le padding selon les besoins */
-  background-color: #000; /* Couleur du fond du bouton */
+  background-color: #43a4ea; /* Couleur du fond du bouton */
   color: #FFF; /* Texte du bouton en blanc */
   border: none;
   cursor: pointer;
@@ -907,6 +907,10 @@ body {
   .function-cat {
     flex-basis: 100%; /* Chaque catégorie prend toute la largeur sur mobile */
   }
+}
+.landing-wrapper.expert-auto-landing-wrapper .hero {
+  background-color: white;
+  background: none;
 }
 
 /*# sourceMappingURL=style.css.map */
