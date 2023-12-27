@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+}
+
+.bouton {
+
+    display: inline-block; /* Allows padding and width/height */
+    background-color: #43a4ea;
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 1px 8px -3px #7e7e7e;
+    cursor: pointer;
+    transition: transform 200ms;
+    text-decoration: none; /* Removes the underline from the link */
+    text-align: center; /* Centers the text inside the link */
+
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.bouton:hover {
+    transform: scale(1.03);
+    background-color: #43a4ea;
+}
+
+
+
+
+
+// .button-container {
+//     text-align: center; /* Center button text */
+//     width: 100%; /* Full width */
+//     display: flex;
+//     justify-content: center; /* Horizontal centering */
+//     align-items: center; /* Vertical centering */
+// }
+
+// .bouton {
+//     background-color: #43a4ea;
+//     color: white;
+//     font-weight: 300;
+//     font-size: 1rem;
+//     padding: 1rem 1rem;
+//     border: none;
+//     border-radius: 2rem;
+//     box-shadow: 2px 1px 8px -3px #7e7e7e;
+//     cursor: pointer;
+//     transition: transform 200ms;
+//     text-decoration: none; /* Remove underline from links if button was an 'a' tag */
+
+//     margin-bottom: 5rem;
+// }
+
+// .bouton:hover {
+//     transform: scale(1.03);
+//     background-color: #43a4ea;
+// }
+
+/* If you need to support full vertical centering in the viewport */
+// html, body {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
+// }
+

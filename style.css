@@ -20,10 +20,22 @@ header h1 {
   position: absolute;
 }
 
+.maintitle {
+  font-weight: bold;
+  color: #000;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+.maintitle h1 {
+  align-items: center;
+}
+
 .localisation {
   align-items: center;
   text-align: center;
-  background-color: #f3f3f3;
+  background-color: #000000;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -40,7 +52,7 @@ header h1 {
 }
 
 footer {
-  background-color: #353535;
+  background-color: #000000;
   padding: 1rem 2rem;
   color: white;
   margin-top: 5rem;
@@ -67,6 +79,782 @@ footer {
 footer :any-link {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.contact {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px "Oswald", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.form-control,
+textarea {
+  max-width: 400px;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.alt-send-button {
+  max-width: 400px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px "Lato", sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px "Oswald", sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+  .form-control, textarea {
+    margin: 0 auto;
+  }
+  .name, .email, textarea {
+    width: 280px;
+  }
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+.imgcarte, .carte {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-width: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.regroupement {
+  position: relative;
+}
+
+.imgcarte, .carte {
+  width: 100%;
+  height: 680px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-width: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-top {
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centrer les éléments de la navigation horizontalement */
+  background-color: #ffffff;
+  padding: 1rem 0; /* Ajoute un peu d'espacement en haut et en bas */
+}
+
+.navigation-top ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Espace entre les éléments de la liste */
+  padding: 0; /* Enlève le padding par défaut de la liste */
+  margin: 0; /* Enlève la marge par défaut de la liste */
+}
+
+.navigation-top a {
+  color: rgb(0, 0, 0); /* Couleur du texte des liens */
+  text-decoration: none; /* Enlève le soulignement des liens */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  margin-top: 10REM;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow to lift the content */
+}
+
+.services {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.services li:before {
+  content: "✓";
+  color: green; /* or any color you prefer */
+  position: absolute;
+  left: 0;
+}
+
+.cta-section {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.statistics p {
+  margin-bottom: 20px;
+}
+
+/* Keyframes for the pulse animation on the button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+/* Add additional media query for responsiveness */
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 20px;
+  }
+  .cta-section {
+    padding: 20px;
+  }
+}
+.cta-button {
+  background-color: #0099CC; /* Blue color */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px; /* rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition for hover effect */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate a clickable button */
+  text-transform: uppercase; /* Optional: transforms text to uppercase */
+  font-weight: bold; /* Optional: makes the font bold */
+}
+
+.cta-button:hover {
+  background-color: #0077A2; /* Slightly darker shade of blue for hover */
+  animation: pulse 1s infinite;
+}
+
+/* Rest of the styles remain the same */
+.collectionbody {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.headercollection {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #e0c7a4;
+}
+
+.headercollection h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.collection {
+  text-align: center;
+  padding: 2em;
+}
+
+.collection h2 {
+  margin-bottom: 1em;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Répète les colonnes pour remplir l'espace disponible */
+  gap: 1em;
+  padding: 1em;
+}
+
+.art-item {
+  background-color: #f4f4f4;
+  padding: 1em;
+  border-radius: 8px;
+  overflow: hidden; /* Cache les débordements */
+  height: auto; /* La hauteur s'adapte au contenu */
+}
+
+.art-item img {
+  width: 100%; /* La largeur de l'image est de 100% de celle de .art-item */
+  height: auto; /* Hauteur fixe pour les images */
+  object-fit: cover; /* Couvre l'espace disponible sans déformer l'image */
+  border-radius: 8px 8px 0 0; /* Arrondit les coins supérieurs de l'image */
+}
+
+.art-item h3 {
+  margin-top: 0.5em;
+  text-align: center; /* Centre le titre sous l'image */
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block; /* Stack the links */
+    margin-right: 0; /* Remove margin between links */
+  }
+  nav ul li a {
+    display: block; /* Make the link fill its container */
+    padding: 10px; /* Add padding for touch targets */
+    border-bottom: 1px solid #ccc; /* Add a separator between links */
+  }
+  /* Optionally hide the last border */
+  nav ul li:last-child a {
+    border-bottom: none;
+  }
+  .art-grid {
+    grid-template-columns: 1fr; /* On small screens, use one column layout */
+  }
+  .art-item img {
+    height: auto; /* Make image height responsive */
+  }
+}
+.presentation .imgpresentation {
+  width: 300px;
+  height: auto;
+  object-fit: cover; /* S'assure que l'image couvre l'élément sans être déformée */
+}
+
+.presentation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding-top: 11rem;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Ajuster selon la marge souhaitée */
+  transform: translateY(-50%); /* Centre verticalement le contenu */
+  color: #000000; /* Texte blanc pour la visibilité */
+  background-color: rgba(192, 222, 241, 0.5); /* Fond semi-transparent pour la lisibilité du texte */
+  padding: 2rem;
+  max-width: 50%; /* Ajuster selon la largeur souhaitée du texte */
+}
+
+.content-overlay h1 {
+  font-size: 2rem; /* Taille du titre */
+  margin-bottom: 1rem;
+}
+
+.content-overlay p {
+  font-size: 1rem; /* Taille du paragraphe */
+  margin-bottom: 1.5rem;
+}
+
+.content-overlay button {
+  font-size: 1rem; /* Taille du bouton */
+  padding: 0.5rem 1rem; /* Ajuster le padding selon les besoins */
+  background-color: #000; /* Couleur du fond du bouton */
+  color: #FFF; /* Texte du bouton en blanc */
+  border: none;
+  cursor: pointer;
+}
+
+.player {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+}
+
+.bouton {
+  display: inline-block; /* Allows padding and width/height */
+  background-color: #43a4ea;
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  cursor: pointer;
+  transition: transform 200ms;
+  text-decoration: none; /* Removes the underline from the link */
+  text-align: center; /* Centers the text inside the link */
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.bouton:hover {
+  transform: scale(1.03);
+  background-color: #43a4ea;
+}
+
+/* If you need to support full vertical centering in the viewport */
+.museum-news {
+  text-align: center;
+  padding: 20px;
+}
+
+.museum-news h2 {
+  font-size: 24px;
+  color: #444;
+}
+
+.museum-news p {
+  color: #666;
+}
+
+.museum-news img {
+  width: auto;
+  height: auto;
+  max-width: 1650px;
+  max-height: 850px;
+}
+
+/* Media query pour les écrans de tablettes */
+@media (max-width: 768px) {
+  .museum-news img {
+    max-width: 600px;
+    max-height: 450px;
+  }
+}
+/* Media query pour les écrans de téléphones */
+@media (max-width: 480px) {
+  .museum-news img {
+    max-width: 300px;
+    max-height: 250px;
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content h1 {
+  color: #003366;
+  font-size: 2em; /* Adjust size for mobile */
+  text-align: center; /* Center heading */
+}
+
+.services {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center list items */
+}
+
+.services li {
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+.media-mention {
+  text-align: center; /* Center media mention */
+  margin: 20px 0;
+}
+
+.cta-container {
+  text-align: center; /* Center CTA button */
+}
+
+.cta-button {
+  background-color: #3a83e2;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  display: inline-block; /* Center button with text-align */
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  opacity: 0.9; /* Slight hover effect */
+}
+
+.stats {
+  text-align: center; /* Center stats */
+  margin: 20px 0;
+}
+
+/* Responsive design adjustments for mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .content h1 {
+    font-size: 1.5em; /* Smaller font size for mobile */
+  }
+  .services li {
+    font-size: 0.9em; /* Smaller font size for mobile */
+  }
+  /* You may add more styles here for other elements */
+}
+/* More media queries can be added for different breakpoints */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.features-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features-container h1 {
+  text-align: center;
+  color: #003366;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.features-list li strong {
+  color: #3a83e2;
+}
+
+main h2 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.text-columns {
+  column-count: 2;
+  column-gap: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: justify;
+  text-decoration: bold;
+}
+
+.text-columns p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Media queries pour les appareils mobiles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .text-columns {
+    column-count: 1; /* Une seule colonne sur les écrans étroits */
+  }
+  main h2 {
+    font-size: 18px; /* Augmenter la taille de police pour la lisibilité */
+  }
+  .text-columns p {
+    font-size: 14px; /* Ajuster la taille de police pour les appareils mobiles */
+  }
+}
+.partners-container {
+  text-align: center; /* Center everything in the container */
+  margin: 40px 0; /* Increase vertical space around the container */
+}
+
+.partners-container h3 {
+  font-size: 2em; /* Increase the size of the title */
+  margin-bottom: 30px; /* Increase space below the title */
+}
+
+.logos {
+  display: flex;
+  justify-content: center; /* Center the logos horizontally */
+  gap: 30px; /* Increase space between the logos */
+}
+
+.partner-logo {
+  height: 80px; /* Increase the height for the logos */
+  vertical-align: middle; /* Align images vertically if needed */
+}
+
+/* Media queries for mobile adaptation */
+@media (max-width: 768px) {
+  .partners-container h3 {
+    font-size: 1.5em; /* Adjust title size for mobile */
+  }
+  .partner-logo {
+    height: 60px; /* Adjust logo size for mobile */
+  }
+  .logos {
+    flex-direction: column; /* Stack logos vertically on mobile */
+    gap: 15px; /* Adjust gap for mobile */
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

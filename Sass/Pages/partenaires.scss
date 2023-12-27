@@ -1,0 +1,37 @@
+.partners-container {
+    text-align: center; /* Center everything in the container */
+    margin: 40px 0; /* Increase vertical space around the container */
+  }
+  
+  .partners-container h3 {
+    font-size: 2em; /* Increase the size of the title */
+    margin-bottom: 30px; /* Increase space below the title */
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center; /* Center the logos horizontally */
+    gap: 30px; /* Increase space between the logos */
+  }
+  
+  .partner-logo {
+    height: 80px; /* Increase the height for the logos */
+    vertical-align: middle; /* Align images vertically if needed */
+  }
+  
+  /* Media queries for mobile adaptation */
+  @media (max-width: 768px) {
+    .partners-container h3 {
+      font-size: 1.5em; /* Adjust title size for mobile */
+    }
+  
+    .partner-logo {
+      height: 60px; /* Adjust logo size for mobile */
+    }
+  
+    .logos {
+      flex-direction: column; /* Stack logos vertically on mobile */
+      gap: 15px; /* Adjust gap for mobile */
+    }
+  }
+  
