@@ -17,4 +17,21 @@
     padding-left: 0; /* Aucun padding à gauche */
     margin-left: 0;
     border-left: 0;
+    font-size: 0.85rem;
+}
+
+/* Media query pour les écrans de tablettes */
+@media (max-width: 768px) {
+    .localisation  {
+        max-width: 100%;
+        max-height: 450px;
+    }
+}
+
+/* Media query pour les écrans de téléphones */
+@media (max-width: 480px) {
+    .localisation  {
+        max-width: 100%;
+        max-height: 250px;
+    }
 }
